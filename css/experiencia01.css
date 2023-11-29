@@ -1,0 +1,736 @@
+/* -- CSS General -- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #695AC8;
+    margin: 0px 0;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../fonts/Mulish/Mulish-Regular.otf) format(opentype);
+    font-weight: 200 1000;
+}
+
+/* ----------- Menú - nav ------------- */
+
+header {
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    margin: 0px;
+    width: 100%;
+    min-width: 990px;
+    height: 160px;
+}
+
+header .logo {
+    max-width: 180px;
+    min-height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    width: 100%;
+    margin: 0px;
+    background-color: #F7F7F7;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-principal ul li {
+    display: inline-block;
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: initial;
+}
+
+.menu-principal ul li a {
+    color: #695AC8;
+    text-decoration: none;
+}
+
+.menu-principal ul li a:hover {
+    color: #32F5F5;
+    text-decoration: none;
+}
+
+.menu-principal ul li a:active {
+    color: #32F5F5;
+    text-decoration: none;
+}
+
+.menu-principal-botones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Botón Iniciar sesión */
+.btn-iniciar-sesion {
+    background-color: #695AC8;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-iniciar-sesion:hover {
+    background-color: #32F5F5;
+}
+
+.btn-iniciar-sesion:focus {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+
+.btn-iniciar-sesion:active {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+
+/* Botón Registrarse */
+.btn-registrarse {
+    background-color: #32F5F5;
+    color: #695AC8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-registrarse:hover {
+    background-color: #12E3E3;
+    color: #FFFFFF;
+}
+
+.btn-registrarse:focus {
+    background-color: #12E3E3;
+    color: #FFFFFF;
+}
+
+.btn-registrarse:active {
+    background-color: #12E3E3;
+    color: #695AC8;
+}
+
+/* Buttons / Botones de Navegación */
+button {
+    border: none;
+    border-radius: 15px;
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: initial;
+}
+
+/* Botón Footer Seleccionar Idioma */
+.btn-idioma {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px;
+    color: #FFFFFF;
+    outline: none;
+    padding: 5%;
+    transition: all .5s ease;
+}
+
+.btn-idioma p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.btn-idioma:hover {
+    color: #695AC8;
+    background-color: #32F5F5;
+}
+
+/* Tamaños de botones */
+.btn-s {
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.btn-m {
+    border-radius: 20px;
+    padding: 10px 24px;
+}
+
+.btn-l {
+    border-radius: 20px;
+    padding: 10px 24px;
+}
+
+/* Botón Demo */
+.btn-demo {
+    background-color: transparent;
+    border: 3px solid #32F5F5;
+    border-radius: 15px;
+    color: #32F5F5;
+    flex-grow: 1;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    /* padding: 20px 16%; */
+    outline: none;
+    transition: all .5s ease;
+}
+
+.btn-demo:hover {
+    color: #695AC8;
+    background-color: #32F5F5;
+}
+
+/* Botón Reservar */
+.btn-reservar {
+    background-color: #32F5F5;
+    /* border-radius: 15px; */
+    color: #695AC8;
+    flex-grow: 1;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    /* padding: 20px 16%; */
+    outline: none;
+    transition: all .5s ease;
+}
+
+.btn-reservar:hover {
+    color: #FFFFFF;
+    background-color: #12E3E3;
+}
+
+/* Textos */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    color: #32F5F5;
+    font-size: 80px;
+}
+
+h2 {
+    color: #695AC8;
+    font-size: 72px;
+}
+
+h3 {
+    color: #32F5F5;
+    font-size: 67px;
+    line-height: normal;
+    text-align: center;
+}
+
+h4 {
+    color: #32F5F5;
+    font-size: 64px;
+    font-style: normal;
+    line-height: 1.5em;
+}
+
+h5 {
+    color: #32F5F5;
+    font-size: 45px;
+}
+
+p {
+    color: #FFFFFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+}
+
+.p-morado {
+    color: #695AC8;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+}
+
+/* Textos páginas moradas */
+.white-txt {
+    color: #FFFFFF;
+}
+
+.p-intro {
+    font-family: 'Atkinson Hyperlegible', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* footer */
+footer {
+    background-color: #695AC8;
+    clear: both;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-evenly;
+    padding: 4%;
+}
+
+.footer-contenedormenus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+footer nav ul {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+footer nav ul li {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footerleft {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 64px;
+    margin-right: 5%;
+    padding-right: 5%;
+}
+
+.menufooter {
+    flex-flow: column;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.menufooter-empresa {
+    flex-flow: column;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footerright {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rrss {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+.rrss img {
+    width: 32px;
+    max-width: 64px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-family: 'Mulish', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Fin Footer */
+/* Fin Estilos Generales */
+
+/* Página Experiencia */
+#main-experiencias {
+    margin: 0;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: auto auto;
+    grid-column-gap: 56px;
+    grid-row-gap: 40px;
+    grid-template-areas:
+        "encabezado-internas encabezado-internas encabezado-internas encabezado-internas"
+        "exp-colizqimg exp-colizqimg exp-coldertxt exp-coldertxt"
+        "carrusel-experiencia carrusel-experiencia carrusel-experiencia carrusel-experiencia";
+}
+
+.encabezado-internas {
+    grid-area: encabezado-internas;
+    align-self: start;
+    justify-self: start;
+}
+
+.encabezado-internas .p-intro {
+    color: #FFFFFF;
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.botones-exp {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 2%;
+    padding: 2%;
+}
+
+.exp-colizqimg {
+    grid-area: exp-colizqimg;
+    justify-self: initial;
+    align-self: initial;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Textos col der */
+.exp-coldertxt {
+    grid-area: exp-coldertxt;
+    align-self: start;
+    justify-self: start;
+    margin: 0px;
+    padding: 0px;
+}
+
+.exp-coldertxt p {
+    color: #FFFFFF;
+    font-family: 'Mulish';
+    font-size: 24px;
+    line-height: 1.6em;
+}
+
+.jugadoresprecio {
+    color: #FFFFFF;
+    font-family: 'Mulish';
+    font-size: 24px;
+    line-height: 1.6em;
+}
+
+.jugadoresprecio::before {
+    content: 'img/jugadoresprecio.png';
+    background: url('img/jugadoresprecio.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 38px;
+    height: auto;
+}
+
+/* Carrusel flechas */
+
+.carrusel-fondoimgtxt {
+    border-top: 3px solid #FFF;
+    background: linear-gradient(180deg, rgba(50, 245, 245, 0.00) 2.6%, rgba(50, 245, 245, 0.60) 100%);
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+}
+
+.exp-colizqimg .img-exp {
+    max-width: 90%;
+}
+
+.carrusel-experiencia {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 330px;
+    width: 1072px;
+    padding: 10%;
+}
+
+.carrusel-exp-testimonio {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    padding: 37px;
+    margin-right: 50px;
+    padding-left: 9%;
+    flex-direction: column;
+}
+
+.carrusel-exp-testimonio p {
+    color: #695AC8;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+.carrusel-exp-img {
+    margin-right: -90px;
+    position: relative;
+    z-index: 1;
+}
+
+.carrusel-exp-img2 {
+    margin-right: -77px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    border: 13px solid #32F5F5;
+    border-radius: 50%;
+}
+
+.carrusel-exp-img3 {
+    margin-right: -77px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    border: 13px solid #32F5F5;
+    border-radius: 50%;
+}
+
+/* Media Queries */
+/* iPhone Pro 11 vertical */
+@media (max-width: 834px),
+screen and (orientation: portrait) {
+
+    #main-experiencias {
+        margin: 0;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px 0px;
+        grid-auto-flow: column;
+        grid-template-rows: auto auto;
+        grid-column-gap: 32px;
+        grid-row-gap: 40px;
+        grid-template-areas:
+            "encabezado-internas"
+            "exp-colizqimg"
+            "exp-coldertxt"
+    }
+
+    /*.encabezado-internas {
+        grid-area: encabezado-internas;
+        align-self: center;
+        justify-self: start;
+    }
+
+    .encabezado-internas .p-intro {
+        color: #FFFFFF;
+        font-family: 'Mulish';
+        font-weight: 600;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 1.5em;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .botones-exp {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        gap: 32px;
+        margin: 2%;
+        padding: 2%;
+    }*/
+
+    .exp-colizqimg {
+        display: flex;
+        grid-area: exp-colizqimg;
+        justify-self: center;
+        align-self: center;
+        margin: 0px;
+        padding: 0px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exp-colizqimg .img-exp {
+        max-width: 85%;
+    }
+
+    /* Textos col der */
+    .exp-coldertxt {
+        grid-area: exp-coldertxt;
+        align-self: start;
+        justify-self: start;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .exp-coldertxt p {
+        color: #FFFFFF;
+        font-family: 'Mulish';
+        font-size: 24px;
+        line-height: 1.6em;
+    }
+
+    .jugadoresprecio {
+        color: #FFFFFF;
+        font-family: 'Mulish';
+        font-size: 24px;
+        line-height: 1.6em;
+    }
+
+    .jugadoresprecio::before {
+        content: 'img/jugadoresprecio.png';
+        background: url('img/jugadoresprecio.png') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 38px;
+        height: auto;
+    }
+
+    /* Carrusel flechas */
+
+    .carrusel-fondoimgtxt {
+        border-top: 3px solid #FFF;
+        background: linear-gradient(180deg, rgba(50, 245, 245, 0.00) 2.6%, rgba(50, 245, 245, 0.60) 100%);
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .carrusel-experiencia {
+        display: flex;
+        position: relative;
+        align-items: center;
+        height: 330px;
+        width: 1072px;
+        padding: 10%;
+    }
+
+    .carrusel-exp-testimonio {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+        padding: 50px;
+        margin-right: 50px;
+        padding-left: 9%;
+        flex-direction: column;
+    }
+
+    .carrusel-exp-testimonio p {
+        color: #695AC8;
+        font-family: 'Atkinson Hyperlegible';
+        font-size: 22px;
+        line-height: 1.5em;
+    }
+
+    .carrusel-exp-img {
+        margin-bottom: -50px;
+        margin-right: 37px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .carrusel-exp-img2 {
+        display: flex;
+        margin-bottom: -50px;
+        margin-right: 37px;
+        position: relative;
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        border: 13px solid #32F5F5;
+        border-radius: 50%;
+    }
+
+    .carrusel-exp-img3 {
+        display: flex;
+        margin-bottom: -50px;
+        margin-right: 35px;
+        position: relative;
+        z-index: 1;
+        height: 300px;
+        width: 300px;
+        border: 13px solid #32F5F5;
+        border-radius: 50%;
+    }
+
+    .slick-prev,
+    .slick-next {
+        opacity: 0;
+    }
+
+    .slick-dots li button:before {
+
+        font-size: 15px;
+        content: '•';
+        text-align: center;
+        color: #32F5F5;
+
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #32F5F5;
+    }
+}
+
+
+/* iPhone Pro 11 horizontal*/
+@media (max-width: 1194px),
+screen and (orientation: landscape) {}

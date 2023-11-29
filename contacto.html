@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+    <title>MindPlay</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-principal">
+            <a href="index.html"><img src="img/Logo.svg" alt="MindPlay" class="logo"></a>
+            <ul>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="indicaciones.html">Indicaciones</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-principal-botones">
+                <button class="btn-iniciar-sesion btn-s" onclick="location.href='login.html'" type="button">Iniciar
+                    sesión</button>
+                <button class="btn-registrarse btn-s" onclick="location.href='registro.html'"
+                    type="button">Registrarse</button>
+                <!-- <button><a href="login.html" class="btn-iniciar-sesion btn-s">Iniciar sesión</a></button>
+                <button><a href="registro.html" class="btn-registrarse btn-s">Registrarse</a></button> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contacto -->
+    <div class="contacto-main">
+        <div class="contacto-encabezado">
+            <h1>Contacto</h1>
+            <h2 class="p-intro">Si tienes cualquier duda o sugerencia no dudes en contactarnos, estaremos encantados de
+                ayudarle</h2>
+        </div>
+        <div class="area-contact-form">
+            <div class="contacto-form-contenedor">
+                <form class="contacto-form" action=" " method="post" id="contact_form" novalidate>
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>
+                            <h5>Rellena el formulario</h5>
+                        </legend>
+
+                        <!-- Text input-->
+                        <label for="nombre">Nombre <span class="asterisco">*</span>:</label>
+                        <input name="nombre" placeholder="Nombre" type="text" id="nombre" required minlength="3"
+                            maxlength="10">
+
+                        <!-- Text input-->
+                        <label for="apellido">Apellido <span class="asterisco">*</span>:</label>
+                        <input name="apellido" placeholder="Apellido" type="text" id="apellido" required minlength="3"
+                            maxlength="10">
+
+                        <!-- Text input-->
+                        <label for="email">Correo electrónico <span class="asterisco">*</span>:</label>
+                        <input name="email" placeholder="Correo electrónico" type="email" id="email" required>
+
+                        <!-- Text input-->
+                        <label>Teléfono <span class="asterisco">*</span>:</label>
+                        <input name="tel" placeholder="600000000" type="tel" id="tel" min="0" max="9">
+
+                        <!-- Text input-->
+                        <label>Dirección</label>
+                        <input name="direccion" placeholder="Dirección" type="text" id="direccion">
+
+                        <!-- Text input-->
+                        <label>Ciudad</label>
+                        <input name="ciudad" placeholder="Ciudad" type="text" id="ciudad">
+
+                        <!-- Select Basic -->
+                        <label>¿Cómo nos ha encontrado?</label>
+                        <select name="opciones">
+                            <option value=" ">Selecciona una de las opciones:</option>
+                            <option value="busqueda">Búsqueda online</option>
+                            <option value="redes">Redes sociales</option>
+                            <option value="recomendacion">Recomendación</option>
+                        </select>
+
+                        <!-- Text input-->
+                        <Label>Código postal <span class="asterisco">*</span>:</Label>
+                        <input name="codigopostal" pattern="[0-9]{5}" title="Five digit zip code" placeholder="Introduce los 5 dígitos de tu código postal" type="text"
+                            required minlength="5" maxlength="5">
+
+                        <!-- Text input-->
+                        <label>Sitio web <span class="asterisco">*</span>:</label>
+                        <input name="website" placeholder="https://www.dominio.com" type="url" required>
+
+                        <!-- radio checks -->
+                        <div class="radio-probado">
+                            <label>¿Has probado experiencias inmersivas antes?</label>
+                            <div class="radio-yn">
+                                <label><input type="radio" name="probar" value="yes" /> Sí</label>
+                                <label><input type="radio" name="probar" value="no" /> No</label>
+                            </div>
+                        </div>
+
+                        <!-- Text area -->
+                        <label>Déjanos tu mensaje:</label>
+                        <textarea name="mensaje" placeholder="Mensaje" required minlength="40"
+                            maxlength="200"></textarea>
+
+                        <!-- Text input-->
+                        <div class="inline"><input type="checkbox" /><label>Acepto los <a href="https://link.com">
+                                    términos y condiciones</a>.</label></div>
+
+                        <!-- Success message -->
+                        <div class="alert-success" role="alert" id="success_message">
+                            Mensaje enviado con éxito. Gracias por contactarnos, nos comunicaremos con usted en breve.
+                        </div>
+
+                        <!-- Button -->
+                        <div class="centrar"><button type="submit" class="btn-m btn-enviar"
+                                value="Enviar">Enviar</button></div>
+                    </fieldset>
+                </form>
+
+                <div class="contacto-datos">
+                    <div class="datos">
+                        <p class="p-tel"> TELEFONO</p>
+                        <p>91 123 45 67</p>
+                    </div>
+                    <div class="datos">
+                        <p class="p-mail"> CORREO ELECTRONICO</p>
+                        <a href="mailto: soporte@mindplay.com">soporte@mindplay.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container -->
+
+    <!-- Fin Bloques -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contenedormenus">
+            <div class="footerleft">
+                <nav class="menufooter">
+                    <ul>
+                        <li><a href="/experiencias.html"></a>Experiencias</li>
+                        <li><a href="/indicaciones.html"></a>Indicaciones</li>
+                        <li><a href="/soporte.html"></a>Soporte</li>
+                        <li><a href="/contacto.html"></a>Contacto</li>
+                    </ul>
+                </nav>
+                <nav class="menufooter-empresa">
+                    <ul>
+                        <li><a href="/empresa.html"></a>Empresa</li>
+                        <li><a href="/acerca.html"></a>Acerca de nosotros</li>
+                        <li><a href="/inversionistas.html"></a>Inversionistas</li>
+                        <li><a href="/faq.html"></a>Preguntas frecuentes</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerright">
+                <div class="rrss">
+                    <a href="https://facebook.com"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="img/linkdln.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com"><img src="img/twiter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+
+                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma">
+                    <p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma">
+                </button>
+            </div>
+        </div>
+
+        <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
+            F5</p>
+    </footer>
+</body>
+
+<script>
+    document.getElementById("contact_form").addEventListener("submit", function(event) {
+        // 
+        resetErrorMessages();
+
+        // Validar campos de form
+        if (!validateName() || !validateEmail() || !validateTel() || !validatePostalCode() || !validateWebsite() || !validateMessage() || !validateCheckbox()) {
+            event.preventDefault(); // Prevenir envío de formulario si validación falla fails
+        }
+    });
+
+    function resetErrorMessages() {
+        // Resetear todos los mensajes de error
+        const errorMessages = document.querySelectorAll('.error-message');
+        errorMessages.forEach(message => message.textContent = '');
+    }
+
+    function validateName() {
+        const nameInput = document.getElementById("nombre");
+        if (nameInput.value.length < 3 || nameInput.value.length > 10) {
+            displayErrorMessage("nombre", "El nombre debe tener entre 3 y 10 caracteres.");
+            return false;
+        }
+        return true;
+    }
+
+    function validateEmail() {
+        const emailInput = document.getElementById("email");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value)) {
+            displayErrorMessage("email", "Ingresa un correo electrónico válido.");
+            return false;
+        }
+        return true;
+    }
+
+    function validateTel() {
+        const telInput = document.getElementById("tel");
+        const telRegex = /^[0-9]*$/;
+        if (!telRegex.test(telInput.value)) {
+            displayErrorMessage("tel", "Ingresa un número de teléfono válido (solo números).");
+            return false;
+        }
+        return true;
+    }
+
+    function validatePostalCode() {
+        const postalCodeInput = document.getElementById("codigopostal");
+        const postalCodeRegex = /^2\d{4}$/;
+        if (!postalCodeRegex.test(postalCodeInput.value)) {
+            displayErrorMessage("codigopostal", "El código postal debe empezar con '2' y tener 5 dígitos (solo números).");
+            return false;
+        }
+        return true;
+    }
+
+    function validateWebsite() {
+        const websiteInput = document.getElementById("website");
+        const websiteRegex = /^(http|https):\/\/[^\s@]+\.[^\s@]+$/;
+        if (!websiteRegex.test(websiteInput.value)) {
+            displayErrorMessage("website", "Ingresa una URL de sitio web válida.");
+            return false;
+        }
+        return true;
+    }
+
+    function validateMessage() {
+        const messageInput = document.querySelector("textarea[name=mensaje]");
+        if (messageInput.value.length < 40 || messageInput.value.length > 200) {
+            displayErrorMessage("mensaje", "El mensaje debe tener entre 40 y 200 caracteres.");
+            return false;
+        }
+        return true;
+    }
+
+    function validateCheckbox() {
+        const checkboxInput = document.querySelector("input[type=checkbox]");
+        if (!checkboxInput.checked) {
+            displayErrorMessage("checkbox", "Debes aceptar los términos y condiciones.");
+            return false;
+        }
+        return true;
+    }
+
+    function displayErrorMessage(inputId, message) {
+        const errorMessageElement = document.createElement('div');
+        errorMessageElement.className = 'error-message';
+        errorMessageElement.textContent = message;
+        document.querySelector(`label[for=${inputId}]`).appendChild(errorMessageElement);
+    }
+</script>
+
+</html>

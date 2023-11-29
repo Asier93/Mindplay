@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <title>MindPlay</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-principal">
+            <a href="index.html"><img src="img/Logo.svg" alt="MindPlay" class="logo"></a>
+            <ul>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="indicaciones.html">Indicaciones</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-principal-botones">
+                <button><a href="login.html" class="btn-iniciar-sesion btn-s">Iniciar sesión</a></button>
+                <button><a href="registro.html" class="btn-registrarse btn-s">Registrarse</a></button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="left-form">
+        <img src="img/imgregister.png" alt="">
+    </div>
+
+    <section class="right-form">
+        <h2>Crear nueva cuenta</h2>
+        <p>¿Ya tienes cuenta? &nbsp; <a href="login.html">Inicia sesión</a></p>
+        <form action="https://example.com/submit.php">
+        
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" id="name" placeholder="Nombre completo">
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico">
+
+            <label for="contr1">Contraseña</label>
+            <input type="password" name="contr1" id="contr1" placeholder="Contraseña">
+
+            <label for="contr2">Confirma tu contraseña</label>
+            <input type="password" name="contr2" id="contr2" placeholder="Confirmar contraseña">
+
+            <div class="check">
+                <input type="checkbox">
+                <span>He leído y acepto los Términos de servicio y política de privacidad.</span>
+            </div>
+
+            <input type="submit" value="Registrar">
+            
+
+            <span>regístrate con:</span>
+            <div class="redsocial">
+            <img src="img/google.png" alt="">
+            <img src="img/facebook.png" alt="">
+            </div>   
+        </form>
+    </section>
+    <footer>
+        <div class="footer-contenedormenus">
+            <div class="footerleft">
+                <nav class="menufooter">
+                    <ul>
+                        <li><a href="/experiencias.html"></a>Experiencias</li>
+                        <li><a href="/indicaciones.html"></a>Indicaciones</li>
+                        <li><a href="/soporte.html"></a>Soporte</li>
+                        <li><a href="/contacto.html"></a>Contacto</li>
+                    </ul>
+                </nav>
+                <nav class="menufooter-empresa">
+                    <ul>
+                        <li><a href="/empresa.html"></a>Empresa</li>
+                        <li><a href="/acerca.html"></a>Acerca de nosotros</li>
+                        <li><a href="/inversionistas.html"></a>Inversionistas</li>
+                        <li><a href="/faq.html"></a>Preguntas frecuentes</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerright">
+                <div class="rrss">
+                    <a href="https://facebook.com"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="img/linkdln.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com"><img src="img/twiter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+
+                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma">
+                    <p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma">
+                </button>
+            </div>
+        </div>
+
+        <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
+            F5</p>
+    </footer>
+</body>        

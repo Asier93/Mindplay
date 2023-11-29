@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro MindPlay</title>
+    <link rel="stylesheet" href="css/loginregister.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+        <title>MindPlay</title>
+</head>
+<body>
+
+    <header>
+        <nav class="menu-principal">
+            <a href="index.html"><img src="img/Logo.svg" alt="MindPlay" class="logo"></a>
+            <ul>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="indicaciones.html">Indicaciones</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-principal-botones">
+                <button class="btn-iniciar-sesion btn-s" onclick="location.href='login.html'" type="button">Iniciar
+                    sesión</button>
+                <button class="btn-registrarse btn-s" onclick="location.href='registro.html'"
+                    type="button">Registrarse</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="contenedor__todo">
+
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesion para entrar en la pagina</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesion</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesion</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+<!--Formulario de login y Registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="" class="formulario__login">
+                    <h2> Iniciar Sesion</h2>
+                    <input type="text" placeholder="Correo Electronico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button>Entrar</button>
+                </form>
+                <!--Registro-->
+                <form action="" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="text" placeholder="Correo Electronico" required>
+                    <input type="text" placeholder="Usuario" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button>Registrarse</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/loginregister.js"></script>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contenedormenus">
+            <div class="footerleft">
+                <nav class="menufooter">
+                    <ul>
+                        <li><a href="/experiencias.html"></a>Experiencias</li>
+                        <li><a href="/indicaciones.html"></a>Indicaciones</li>
+                        <li><a href="/soporte.html"></a>Soporte</li>
+                        <li><a href="/contacto.html"></a>Contacto</li>
+                    </ul>
+                </nav>
+                <nav class="menufooter-empresa">
+                    <ul>
+                        <li><a href="/empresa.html"></a>Empresa</li>
+                        <li><a href="/acerca.html"></a>Acerca de nosotros</li>
+                        <li><a href="/inversionistas.html"></a>Inversionistas</li>
+                        <li><a href="/faq.html"></a>Preguntas frecuentes</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerright">
+                <div class="rrss">
+                    <a href="https://facebook.com"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="img/linkdln.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com"><img src="img/twiter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+
+                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma">
+                    <p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma">
+                </button>
+            </div>
+        </div>
+
+        <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
+            F5</p>
+    </footer>
+
+
+
+</body>
+</html>

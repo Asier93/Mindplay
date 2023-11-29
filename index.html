@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+    <title>MindPlay</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-principal">
+            <a href="index.html"><img src="img/Logo.svg" alt="MindPlay" class="logo"></a>
+            <ul>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="indicaciones.html">Indicaciones</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-principal-botones">
+                <button class="btn-iniciar-sesion btn-s" onclick="location.href='login.html'" type="button">Iniciar
+                    sesión</button>
+                <button class="btn-registrarse btn-s" onclick="location.href='registro.html'"
+                    type="button">Registrarse</button>
+            </div>
+        </nav>
+    </header>
+
+    <!--   Imagen de entrada -->
+
+    <div class="portada">
+        <img src="img/terror.png" alt="Hallowen" class="imagenHalloween">
+        <div class="portada-col-izq-txt">
+            <img src="img/Halloween.png" alt="" class="letrahalloween">
+            <p>"En esta noche mágica, <br>el miedo se hace realidad."</p>
+            <button class="btn-reservar">Reservar</button>
+        </div>
+
+    </div>
+
+    <!--   Filtro por experiencias -->
+
+    <div class="fondoMorado">
+        <div class="contentwhite">
+            <section>
+                <h2 class="subfilter">Descubre más <br>experiencias Inmersivas</h2>
+                <div>
+                    <ul class="filter">
+                        <li class="filter__item" data-category="Todas">Todas</li>
+                        <li class="filter__item" data-category="Cultura">Cultura</li>
+                        <li class="filter__item" data-category="Deportes">Deportes</li>
+                        <li class="filter__item" data-category="Temporada">Temporada</li>
+                        <li class="filter__item" data-category="Terapéuticas">Terapéuticas</li>
+                        <li class="filter__item" data-category="Viajes">Viajes</li>
+                    </ul>
+                </div>
+
+                <div class="allimages">
+                    <!-- Tarjetas preexistentes -->
+                    <div class="cont-image" data-category="Deportes">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/concierto.png" alt="concierto">
+                        <hr>
+                        <p class="titleimage">Welcome to the Jungle</p>
+                        <p class="subtitle">Producción propia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image" data-category="Cultura">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/pintura.png" alt="pintura">
+                        <hr>
+                        <p class="titleimage">Pinturas del el Bosco</p>
+                        <p class="subtitle">Coproducción con el Museo de El Prado</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image" data-category="Terapéuticas">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/terapeutica1.jpg" alt="explorar">
+                        <hr>
+                        <p class="titleimage">Acrofobia</p>
+                        <p class="subtitle">Coproducción con el Museo de Historia</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <!-- Nuevas tarjetas para los tipos restantes -->
+                    <div class="cont-image" data-category="Temporada">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/temporada.jpeg" alt="temporada">
+                        <hr>
+                        <p class="titleimage">Celebración de Temporada</p>
+                        <p class="subtitle">Temporada</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image" data-category="Viajes">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/viaje.jpg" alt="viaje">
+                        <hr>
+                        <p class="titleimage">Aventura de Viaje</p>
+                        <p class="subtitle">Viajes</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image" data-category="Temporada">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/fiesta.jpg" alt="fiesta">
+                        <hr>
+                        <p class="titleimage">Fiesta de Temporada</p>
+                        <p class="subtitle">Temporada</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <div class="cont-image" data-category="Temporada">
+                        <img src="img/corazon.png" alt="corazon" class="corazon">
+                        <img src="img/otra_temporada.jpg" alt="otra_temporada">
+                        <hr>
+                        <p class="titleimage">Otra Experiencia de Temporada</p>
+                        <p class="subtitle">Temporada</p>
+                        <div class="contenttimeprice">
+                            <p>Duración: <em>02h : 00m : 00s</em></p>
+                            <p>Precio: <em>10 €</em></p>
+                        </div>
+                    </div>
+
+                    <!-- Puedes agregar más tarjetas según sea necesario -->
+
+                    <div>
+                        <span class="cargar"><a href="#">Cargar más</a></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- influencers  -->
+    <div class="fondoMorado">
+        <section class="influencers">
+            <h3>¡Queremos emocionarte!</h3>
+            <div class="opiniones">
+                <p class="textoinfluencers">Más de 1M de influencers han compartido sus stories</p>
+                <div>
+                    <img class="img-influencer-minielipse" src="img/1.img-influencer-minielipse.png"
+                        alt="chica con camiseta naranja y brazos cruzados">
+                    <img class="img-influencer-minielipse" src="img/2.img-influencer-minielipse.png"
+                        alt="chica con camiseta blanca cruzando los brazos">
+                    <img class="img-influencer-minielipse" src="img/3.img-influencer-minielipse.png"
+                        alt="chica sonriendo">
+                    <img class="img-influencer-minielipse" src="img/4.img-influencer-minielipse.png"
+                        alt="chico cruzando los brazos">
+                </div>
+                <div class="tarjetas">
+                    <img class="testimonio-annie" src="img/Testimonioannie.png"
+                        alt="chica con gafas de realidad virtual">
+                    <img class="testimonio-asier" src="img/Testimonioasier.png"
+                        alt="persona con gafas de realidad virtual">
+                    <img class="testimonio-fobia" src="img/Testimoniofobia.png"
+                        alt="chico con gafas de realidad virtual">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Fin Bloques -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-contenedormenus">
+            <div class="footerleft">
+                <nav class="menufooter">
+                    <ul>
+                        <li><a href="/experiencias.html"></a>Experiencias</li>
+                        <li><a href="/indicaciones.html"></a>Indicaciones</li>
+                        <li><a href="/soporte.html"></a>Soporte</li>
+                        <li><a href="/contacto.html"></a>Contacto</li>
+                    </ul>
+                </nav>
+                <nav class="menufooter-empresa">
+                    <ul>
+                        <li><a href="/empresa.html"></a>Empresa</li>
+                        <li><a href="/acerca.html"></a>Acerca de nosotros</li>
+                        <li><a href="/inversionistas.html"></a>Inversionistas</li>
+                        <li><a href="/faq.html"></a>Preguntas frecuentes</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerright">
+                <div class="rrss">
+                    <a href="https://facebook.com"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="https://linkedin.com"><img src="img/linkdln.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com"><img src="img/twiter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+
+                <button class="btn-idioma"><img src="img/ic-idiomamundo.svg" alt="Seleccionar idioma">
+                    <p>Español</p><img src="img/chevron-down.svg" alt="seleccionar idioma">
+                </button>
+            </div>
+        </div>
+
+        <p>Desarrollado en el Curso de Desarrollo Web Fullstack + Tecnologías Inmersivas de Fundación Tomillo y Factoría
+            F5</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterItems = document.querySelectorAll('.filter__item');
+            const cards = document.querySelectorAll('.cont-image');
+
+            filterItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+
+                    cards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+
+                        if (category === 'Todas' || category === cardCategory) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
