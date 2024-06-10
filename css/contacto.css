@@ -474,7 +474,6 @@ footer p {
     background-color: #695AC8;
     border-radius: 30px;
     overflow: hidden;
-    /* position: relative; */
 }
 
 .allimages img {
@@ -793,7 +792,6 @@ p {
     height: 90px;
     flex-shrink: 0;
     border-radius: 90px;
-    /* background: #F7F8F8 50%; */
     display: inline;
     margin-left: 0%
 }
