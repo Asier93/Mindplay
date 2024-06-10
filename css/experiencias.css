@@ -16,16 +16,6 @@ body {
     font-weight: 200 1000;
 }
 
-/* @font-face {
-    font-family: 'Atkinson Hyperlegible';
-    src: url(/01_MindPlay/fonts/Atkinson_Hyperlegible/AtkinsonHyperlegible-Bold.ttf) format(truetype);
-    font-weight: 400 700;
-} */
-
-/* .clearfix {
-    overflow: auto;
-  } */
-
 /* ----------- Menú - nav ------------- */
 
 .logo {
@@ -184,7 +174,6 @@ button {
     font-weight: 700;
     text-align: center;
     line-height: 1;
-    /* padding: 20px 16%; */
     outline: none;
     transition: all .5s ease;
 }
@@ -197,7 +186,6 @@ button {
 /* Botón Reservar */
 .btn-reservar {
     background-color: #32F5F5;
-    /* border-radius: 15px; */
     color: #695AC8;
     flex-grow: 1;
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -205,7 +193,6 @@ button {
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    /* padding: 20px 16%; */
     outline: none;
     transition: all .5s ease;
 }
@@ -348,7 +335,6 @@ p {
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-rows: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 40px;
