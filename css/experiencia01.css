@@ -203,7 +203,6 @@ button {
     font-weight: 700;
     text-align: center;
     line-height: 1;
-    /* padding: 20px 16%; */
     outline: none;
     transition: all .5s ease;
 }
@@ -216,7 +215,6 @@ button {
 /* Botón Reservar */
 .btn-reservar {
     background-color: #32F5F5;
-    /* border-radius: 15px; */
     color: #695AC8;
     flex-grow: 1;
     font-family: 'Atkinson Hyperlegible', sans-serif;
@@ -224,7 +222,6 @@ button {
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    /* padding: 20px 16%; */
     outline: none;
     transition: all .5s ease;
 }
@@ -393,7 +390,6 @@ footer p {
     padding: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-template-rows: auto auto;
     grid-column-gap: 56px;
     grid-row-gap: 40px;
@@ -561,32 +557,6 @@ screen and (orientation: portrait) {
             "exp-colizqimg"
             "exp-coldertxt"
     }
-
-    /*.encabezado-internas {
-        grid-area: encabezado-internas;
-        align-self: center;
-        justify-self: start;
-    }
-
-    .encabezado-internas .p-intro {
-        color: #FFFFFF;
-        font-family: 'Mulish';
-        font-weight: 600;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 1.5em;
-        padding-bottom: 20px;
-        margin-bottom: 10px;
-    }
-
-    .botones-exp {
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
-        gap: 32px;
-        margin: 2%;
-        padding: 2%;
-    }*/
 
     .exp-colizqimg {
         display: flex;
